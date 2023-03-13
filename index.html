@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Сайт визитка</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <span class="logo">Webpacman</span>
+
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu-element">
+                        <a class="menu-element__link" href="">Home</a>
+                    </li>
+                    <li class="menu-element">
+                        <a class="menu-element__link" href="">About</a>
+                    </li>
+                    <li class="menu-element">
+                        <a class="menu-element__link" href="">Achievements</a>
+                    </li>
+                    <li class="menu-element">
+                        <a class="menu-element__link" href="">Skills</a>
+                    </li>
+                    <li class="menu-element">
+                        <a class="menu-element__link" href="">Work</a>
+                    </li>
+                    <li class="menu-element">
+                        <a class="menu-element__link" href="">Interests</a>
+                    </li>
+                    <li class="menu-element">
+                        <a class="menu-element__link" href="">Books</a>
+                    </li>
+                    <li class="menu-element">
+                        <a class="menu-element__link" href="">Contact me</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="switcher">Ru/Eng</div>
+        </div>
+
+        <div class="header-center">
+            <h1 class="name">Шевчук&nbsp;Виталий</h1>
+            <p class="description">Привет! Меня зовут Виталий. Я веб-разработчик, давайте знакомиться!</p>
+        </div>
+    </header>
+
+    <section class="about-me">
+        <div class="left">
+            <img src="" alt="Моя фотка" />
+        </div>
+
+        <div class="right">
+            <р class="about-me__title">Шевчук Виталий Геннадьевич</р>
+            <p class="about-me__description gray">Все мы немножко fullstack...</p>
+
+            <p class="about-me__description">Я веб-разработчик уровня middle+ со стажем 7 лет. Начинал свой путь с
+                написания небольших сайтов для знакомых, успел поработать в стартапе (больше не хочу), попробовал
+                множество языков программирования и технологий.</p>
+            <p class="about-me__description">Сейчас работаю в компании М Тех, а именно - развиваю и сопровождаю сайт
+                eldorado.ru. Тут я полюбил php, познакомился с React, научился работать в команде, активно общаться с
+                "бизнесом", обучать и управлять.</p>
+            <p class="about-me__description">Свободное время посвящаю развитию и поддержке сторонних проектов, например,
+                Мой да мети, стараюсь активно изучать framework Laravel или React и побольше времени проводить с
+                семьей.</p>
+            <p class="about-me__description">Мой канал на Youtube:
+                <a class="link" target="_blank" href="https://www.youtube.com/@webpacman">Webpacman</a></p>
+
+            <ul class="about-me__extra">
+                <li class="about-me__extra-element">
+                    <span class="bold">Дата рождения:</span>
+                    <span>25.05.1995</span>
+                </li>
+                <li class="about-me__extra-element">
+                    <span class="bold">Адрес:</span>
+                    <span>г. Москва, Россия</span>
+                </li>
+                <li class="about-me__extra-element">
+                    <span class="bold">Образование:</span>
+                    <span>МАДИ(ГТУ), специальность - Автоматизированные системы управления (АСУ)</span>
+                </li>
+                <li class="about-me__extra-element">
+                    <span class="bold">Курсы:</span>
+                    <span>Python-разработчик (geekbrains)</span>
+                    <span class="block">Php от 0 до PRO (Skillbox)</span>
+                    <span class="block">React + Redux (Udemy)</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <h2 class="second-title">Достижения</h2>
+
+        <ul class="achievements-list">
+            <li class="achievements-list__element">Достижение 1</li>
+            <li class="achievements-list__element">Достижение 2</li>
+            <li class="achievements-list__element">Достижение 3</li>
+            <li class="achievements-list__element">Достижение 4</li>
+            <li class="achievements-list__element">Достижение 5</li>
+        </ul>
+    </section>
+
+    <section class="skills">
+        <h2 class="second-title">Навыки</h2>
+
+        <p class="section-description">Все оценки являются субъективными и показывают уровень, который,
+            как по мне, необходим для работы.</p>
+
+        <ul class="skills-filters">
+            <li class="skill-filter">Все</li>
+            <li class="skill-filter">Html/css</li>
+            <li class="skill-filter">Php</li>
+            <li class="skill-filter">Js</li>
+            <li class="skill-filter">Database</li>
+            <li class="skill-filter">Other</li>
+        </ul>
+
+        <div class="skills-wrapper">
+            <ul class="skills-list left">
+                <li class="skills-list__element">Php</li>
+                <li class="skills-list__element">Laravel</li>
+                <li class="skills-list__element">Bitrix</li>
+                <li class="skills-list__element">Symfony</li>
+            </ul>
+
+            <div class="skill-card right">
+                <div class="skill-card__title">
+                    <img src="" alt="Php" class="skill-card__image" />
+                    <span class="skill-card__name">Php</span>
+                </div>
+
+                <div class="skill-card__progress">
+                    <span class="skill-card__progress-percent">85%</span>
+                    <div class="skill-card__progress-bar"></div>
+                </div>
+
+                <p class="skill-card__description">Я люблю php. Это красивый и цельный язык программирования,
+                    который дает разработчику то, что ему нужно.
+                    В плохом коде всегда нужно задавать вопросы людям,
+                    а не языку программирования, поэтому, как бы php не хейтили - для меня он прекрасен!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <h2 class="second-title">Работа</h2>
+
+        <div class="work-wrapper">
+            <div class="work-element left">
+                <div class="work-element__content">
+                    <p class="work-element__title">Официант и менеджер заведения</p>
+                    <p class="work-element__description">декабрь 2015 - июль 2017</p>
+
+                    <p class="work-element__block-title">Навыки</p>
+                    <ul class="work-element__skills">
+                        <li class="work-element__skills-element">Коммуникабельность</li>
+                        <li class="work-element__skills-element">Стрессоустойчивость</li>
+                        <li class="work-element__skills-element">Внимательность</li>
+                    </ul>
+                </div>
+                <div class="work-element__date">2015</div>
+            </div>
+
+            <div class="work-element right">
+                <div class="work-element__content">
+                    <p class="work-element__title">Верстальщик в проект</p>
+                    <p class="work-element__description">апрель 2017 - октябрь 2017</p>
+
+                    <p class="work-element__block-title">Проекты</p>
+                    <ul class="work-element__projects">
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">Сайт РСК Стройсервис</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    Вёрстка, поддержка и раскрутка сайта gksts.ru (сейчас недоступен)
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <p class="work-element__block-title">Навыки</p>
+                    <ul class="work-element__skills">
+                        <li class="work-element__skills-element">html</li>
+                        <li class="work-element__skills-element">css</li>
+                        <li class="work-element__skills-element">sass</li>
+                        <li class="work-element__skills-element">javascript</li>
+                        <li class="work-element__skills-element">gulp</li>
+                        <li class="work-element__skills-element">seo</li>
+                    </ul>
+                </div>
+                <div class="work-element__date">2016</div>
+            </div>
+
+            <div class="work-element left">
+                <div class="work-element__content">
+                    <p class="work-element__title">ООО "Чейнкс"</p>
+                    <p class="work-element__description">октябрь 2017 - ноябрь 2018</p>
+
+                    <p class="work-element__block-title">Проекты</p>
+                    <ul class="work-element__projects">
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">Blockchain</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    Интеграция с блокчейн проектом через javascript
+                                </p>
+                            </div>
+                        </li>
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">WebTMA</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    Сайт для российской команды поддержки WebTMA webtma.ru (сейчас недоступен)
+                                </p>
+                            </div>
+                        </li>
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">QRCodeNavigation</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    Проект по навигационным карточкам с использованием QR-кодов.
+                                    Сервер на node.js, БД - sqlite3 + mongoDB
+                                </p>
+                            </div>
+                        </li>
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">BrandCheck</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    Блог-интеграция с проектом BrandCheck. Реализация на Django Framework
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <p class="work-element__block-title">Навыки</p>
+                    <ul class="work-element__skills">
+                        <li class="work-element__skills-element">html+</li>
+                        <li class="work-element__skills-element">css+</li>
+                        <li class="work-element__skills-element">javascript+</li>
+                        <li class="work-element__skills-element">blockchain</li>
+                        <li class="work-element__skills-element">node.js</li>
+                        <li class="work-element__skills-element">python</li>
+                        <li class="work-element__skills-element">django</li>
+                        <li class="work-element__skills-element">mongodb</li>
+                        <li class="work-element__skills-element">postgresql</li>
+                    </ul>
+                </div>
+                <div class="work-element__date">2017</div>
+            </div>
+
+            <div class="work-element right">
+                <div class="work-element__content">
+                    <p class="work-element__title">ООО "М Тех"</p>
+                    <p class="work-element__description">с ноября 2018 по настоящее время</p>
+
+                    <p class="work-element__block-title">Проекты</p>
+                    <ul class="work-element__projects">
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">Интерфейсы support</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    ...
+                                </p>
+                            </div>
+                        </li>
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">WebTMA</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    Сайт для российской команды поддержки WebTMA webtma.ru (сейчас недоступен)
+                                </p>
+                            </div>
+                        </li>
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">RR, DY, Flocktory, Diginetica, Mindbox...</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    ...
+                                </p>
+                            </div>
+                        </li>
+                        <li class="work-element__projects-element work-project">
+                            <span class="work-project__title">more...</span>
+                            <div class="work-tooltip">
+                                <p class="work-project__description">
+                                    ...
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <p class="work-element__block-title">Навыки</p>
+                    <ul class="work-element__skills">
+                        <li class="work-element__skills-element">html+</li>
+                        <li class="work-element__skills-element">css+</li>
+                        <li class="work-element__skills-element">javascript+</li>
+                        <li class="work-element__skills-element">blockchain</li>
+                        <li class="work-element__skills-element">node.js</li>
+                        <li class="work-element__skills-element">python</li>
+                        <li class="work-element__skills-element">django</li>
+                        <li class="work-element__skills-element">mongodb</li>
+                        <li class="work-element__skills-element">postgresql</li>
+                        <li class="work-element__skills-element">team lead skills</li>
+                    </ul>
+                </div>
+                <div class="work-element__date">2018</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interests">
+        <h2 class="second-title">Интересы</h2>
+
+        <div class="interest-wrapper">
+            <img src="" alt="" class="interest-image" />
+            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est iure laborum magni neque nihil nostrum, nulla quam quia sint?</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est iure laborum magni neque nihil nostrum, nulla quam quia sint?</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est iure laborum magni neque nihil nostrum, nulla quam quia sint?</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="" alt="" class="interest-image" />
+            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda, distinctio doloremque eligendi eos iure magni quos repellat sit suscipit.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda, distinctio doloremque eligendi eos iure magni quos repellat sit suscipit.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda, distinctio doloremque eligendi eos iure magni quos repellat sit suscipit.</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="" alt="" class="interest-image" />
+            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, delectus nisi odit quisquam sequi sint tenetur! Doloribus labore laborum tempore.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, delectus nisi odit quisquam sequi sint tenetur! Doloribus labore laborum tempore.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, delectus nisi odit quisquam sequi sint tenetur! Doloribus labore laborum tempore.</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="" alt="" class="interest-image" />
+            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolorem soluta voluptatem? Aperiam blanditiis dignissimos earum eligendi facere in, incidunt!</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolorem soluta voluptatem? Aperiam blanditiis dignissimos earum eligendi facere in, incidunt!</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolorem soluta voluptatem? Aperiam blanditiis dignissimos earum eligendi facere in, incidunt!</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="" alt="" class="interest-image" />
+            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi debitis doloremque, earum facilis illum molestiae molestias quis quisquam voluptatibus.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi debitis doloremque, earum facilis illum molestiae molestias quis quisquam voluptatibus.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad commodi debitis doloremque, earum facilis illum molestiae molestias quis quisquam voluptatibus.</p>
+        </div>
+        <div class="interest-wrapper">
+            <img src="" alt="" class="interest-image" />
+            <p class="interest-title">Lorem ipsum dolor sit amet.</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque culpa deserunt eius explicabo laboriosam modi numquam odio reprehenderit voluptates?</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque culpa deserunt eius explicabo laboriosam modi numquam odio reprehenderit voluptates?</p>
+            <p class="interest-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque culpa deserunt eius explicabo laboriosam modi numquam odio reprehenderit voluptates?</p>
+        </div>
+    </section>
+
+    <section class="books">
+        <h2 class="second-title">Прочитанные книги</h2>
+
+        <p class="section-description">Тут указаны не все прочитанные мной книги,
+            а только те книги, которые произвели на меня наибольшее впечатление.</p>
+
+        <ul class="books-list">
+            <li class="books-list__element">Книга 1</li>
+            <li class="books-list__element">Книга 2</li>
+            <li class="books-list__element">Книга 3</li>
+            <li class="books-list__element">Книга 4</li>
+            <li class="books-list__element">Книга 5</li>
+        </ul>
+    </section>
+
+    <section class="contact-me">
+        <h2 class="second-title">Обратная связь</h2>
+
+        <form action="" class="contact-me__form">
+            <div class="input-wrapper">
+                <label class="label" for="name">Имя</label>
+                <input class="input" type="text" id="name" required />
+            </div>
+            <div class="input-wrapper">
+                <label class="label" for="email">E-mail</label>
+                <input class="input" type="email" id="email" required />
+            </div>
+
+            <div class="textarea-wrapper">
+                <label class="label" for="message">Сообщение</label>
+                <textarea class="textarea" name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+
+            <button type="submit" class="submit">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <ul class="socials">
+            <li class="social-element">
+                <a href="" class="social-element__link">VK</a>
+            </li>
+            <li class="social-element">
+                <a href="" class="social-element__link">TG</a>
+            </li>
+        </ul>
+
+        <p class="footer-about">
+            &copy;&nbsp;Шевчук&nbsp;Виталий 1995&nbsp;-&nbsp;2023
+        </p>
+    </footer>
+</body>
+</html>
