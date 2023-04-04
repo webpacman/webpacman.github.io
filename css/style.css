@@ -1,0 +1,106 @@
+/* Переменные */
+:root {
+    --color-green: #76bc21;
+    --background-black-opacity: rgb(0, 0, 0, .7);
+}
+
+/* Общие стили */
+a {
+    color: var(--color-green);
+    text-decoration: none;
+    transition: opacity .25s ease;
+}
+a:hover {
+    opacity: .7;
+}
+
+/* Header стили */
+.header {
+    position: relative;
+    height: 110vh;
+    clip-path: polygon(100% 0, 100% 86%, 54% 100%, 0 88%, 0 0);
+}
+
+.header__background {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(1px) opacity(.9) saturate(200%);
+}
+.header__background-wrapper {
+    position: absolute;
+    height: inherit;
+    width: 100%;
+
+    background: rgb(0, 0, 0, .5);
+
+    z-index: 1;
+}
+
+.header-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 80px;
+
+    color: #fff;
+    background: var(--background-black-opacity);
+
+    z-index: 2;
+}
+.header-top a {
+    color: #fff;
+}
+.header-top a.active {
+    color: var(--color-green);
+}
+
+.logo {
+    font-size: 36px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.menu-element {
+    margin-right: 10px;
+
+    font-size: 22px;
+}
+.menu-element:last-child {
+    margin-right: 0;
+}
+
+.header-center {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+
+    color: #fff;
+
+    z-index: 2;
+}
+.header-center__wrapper {
+    width: 100%;
+    padding: 20px 0;
+
+    background: var(--background-black-opacity);
+    text-align: center;
+}
+
+.name {
+    font-size: 58px;
+    line-height: 74px;
+}
+.description {
+    font-size: 22px;
+}

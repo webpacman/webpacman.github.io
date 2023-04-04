@@ -4,17 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Сайт визитка</title>
+    <title>Шевчук Виталий Геннадьевич | Разработчик web приложений</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <header class="header">
+        <img class="header__background" src="images/pacman-bg.jpg" alt="background" />
+        <div class="header__background-wrapper"></div>
+
         <div class="header-top">
-            <span class="logo">Webpacman</span>
+            <a href="" class="logo">Виталий Шевчук</a>
 
             <nav class="navigation">
                 <ul class="menu">
                     <li class="menu-element">
-                        <a class="menu-element__link" href="">Home</a>
+                        <a class="menu-element__link active" href="">Home</a>
                     </li>
                     <li class="menu-element">
                         <a class="menu-element__link" href="">About</a>
@@ -44,8 +50,10 @@
         </div>
 
         <div class="header-center">
-            <h1 class="name">Шевчук&nbsp;Виталий</h1>
-            <p class="description">Привет! Меня зовут Виталий. Я веб-разработчик, давайте знакомиться!</p>
+            <div class="header-center__wrapper">
+                <h1 class="name">Шевчук&nbsp;Виталий</h1>
+                <p class="description">Привет! Меня зовут Виталий. Я веб-разработчик, давайте знакомиться!</p>
+            </div>
         </div>
     </header>
 
