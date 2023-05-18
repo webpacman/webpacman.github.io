@@ -5,18 +5,25 @@
 }
 
 /* Общие стили */
-a {
+a.link {
     color: var(--color-green);
     text-decoration: none;
     transition: opacity .25s ease;
 }
-a:hover {
+a.link:hover {
     opacity: .7;
+}
+
+.block-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Header стили */
 .header {
     position: relative;
+    bottom: 80px;
     height: 110vh;
     clip-path: polygon(100% 0, 100% 86%, 54% 100%, 0 88%, 0 0);
 }
@@ -39,7 +46,8 @@ a:hover {
 }
 
 .header-top {
-    position: relative;
+    position: sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -49,34 +57,38 @@ a:hover {
     color: #fff;
     background: var(--background-black-opacity);
 
-    z-index: 2;
+    z-index: 3;
 }
-.header-top a {
+.header-top a.link {
     color: #fff;
-}
-.header-top a.active {
-    color: var(--color-green);
 }
 
 .logo {
+    width: 260px;
     font-size: 36px;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .menu-element {
-    margin-right: 10px;
+    margin-right: 25px;
 
     font-size: 22px;
 }
 .menu-element:last-child {
     margin-right: 0;
 }
+.menu-element a.link.active, .menu-element a.link:hover {
+    color: var(--color-green);
+}
 
+.menu-element__link.home svg {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.switcher-container {
+    width: 260px;
+}
 .switcher-wrapper {
     position: relative;
     display: flex;
@@ -160,6 +172,38 @@ a:hover {
     font-size: 58px;
     line-height: 74px;
 }
+
 .description {
+    display: inline-block;
+    width: 672px;
+
     font-size: 22px;
+    line-height: 1.5em;
+    white-space: nowrap;
+
+    border-right: 3px solid transparent;
+
+    overflow: hidden;
+    
+    animation: cursor 0.75s 8, print-text 5s steps(58);
+}
+
+@keyframes cursor {
+    0% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #fff;
+    }
+
+    100% {
+        border-color: transparent;
+    }
+}
+
+@keyframes print-text {
+    from {
+        width: 0;
+    }
 }
