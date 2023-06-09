@@ -6,6 +6,7 @@
     --color-text-black: #262626;
 
     --background-black-opacity: rgb(0, 0, 0, .7);
+    --background-grey: rgb(225, 225, 225, .3);
 }
 
 /* Header стили */
@@ -200,6 +201,7 @@
 .about-me {
     display: flex;
     align-items: center;
+    padding-bottom: 60px;
 }
 
 .about-me .left {
@@ -252,6 +254,32 @@ ul.about-me__extra {
     color: var(--color-green);
 }
 
+/* Секция достижения */
+.achievements {
+    flex-direction: column;
+    position: relative;
+    padding: 40px 0 80px;
+}
+.achievements:before,
+.achievements:after {
+    content: "";
+    position: absolute;
+
+    border: 100px solid transparent;
+}
+.achievements:before {
+    border-top: 30px solid #fff;
+    top: 0;
+}
+.achievements:after {
+    border-top: 40px solid var(--background-grey);
+    bottom: -140px;
+}
+
+/* Секция навыки */
+.skills {
+    padding: 60px 0 40px;
+}
 
 /* Секция интересы */
 .interests {
@@ -297,9 +325,12 @@ ul.about-me__extra {
     margin-bottom: 0;
 }
 
-
-
-
+/* Секция книги */
+.books {
+    padding: 40px 0 80px;
+    flex-direction: column;
+    position: relative;
+}
 
 
 
@@ -352,4 +383,86 @@ a.link:hover {
     left: calc(50% - var(--underline-width) / 2);
 
     background: var(--color-green);
+}
+
+.section-description {
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-text-black);
+}
+
+.section-grey {
+    background: var(--background-grey);
+}
+
+/* Слайдер изображений */
+.slider {
+    position: relative;
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.slider__wrapper {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+
+    transition: all .5s ease;
+}
+
+.slider__link {
+    flex: 1 1 33%;
+}
+
+.slider__image {
+    width: 100%;
+    max-width: 250px;
+}
+
+.slider__input {
+    display: none;
+}
+
+.slider__controls {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.slider__controls-element {
+    display: inline-block;
+    width: 40px;
+    height: 8px;
+
+    border-radius: 8px;
+    background: rgb(0 0 0 / 20%);
+
+    cursor: pointer;
+    transition: all .25s ease;
+}
+.slider__controls-element:hover {
+    background: var(--color-green);
+}
+
+.slider__input:first-of-type:checked ~ .slider__wrapper:first-of-type {
+    margin-left: 0;
+}
+.slider__input:nth-of-type(2):checked ~ .slider__wrapper:first-of-type {
+    margin-left: -100%;
+}
+.slider__input:nth-of-type(3):checked ~ .slider__wrapper:first-of-type {
+    margin-left: -200%;
+}
+.slider__input:nth-of-type(4):checked ~ .slider__wrapper:first-of-type {
+    margin-left: -300%;
+}
+.slider__input:nth-of-type(5):checked ~ .slider__wrapper:first-of-type {
+    margin-left: -400%;
 }
