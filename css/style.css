@@ -877,6 +877,10 @@ input[name="skills-filter-radio"]:nth-of-type(3):checked ~ .skills-wrapper:nth-o
 }
 
 /* Общие стили */
+html {
+    scroll-behavior: smooth;
+}
+
 a.link {
     color: var(--color-green);
     fill: var(--color-green);
