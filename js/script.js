@@ -1,3 +1,6 @@
+const menuHeight = document.querySelector(".header-top").clientHeight;
+
+/* Active link after click */
 /*$(".menu-element__link").click(function() {
     const thisElement = $(this);
 
@@ -18,10 +21,6 @@
     $(".menu-element__link.active").removeClass('active');
     thisElement.addClass('active');
 });*/
-
-const menuHeight = document.querySelector(".header-top").clientHeight;
-
-/* Active link after click */
 document.querySelectorAll(".menu-element__link").forEach(element => {
     element.addEventListener("click", function (e) {
         e.preventDefault();
@@ -61,6 +60,102 @@ const observer = new IntersectionObserver(callback, options);
 document.querySelectorAll(".observer-section").forEach(element => {
     observer.observe(element);
 });
+
+/* Слайдеры изображений */
+const swiper = new Swiper('.achievements-list', {
+    loop: true,
+
+    slidesPerView: 3,
+    spaceBetween: 30,
+    //centeredSlides: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        bulletClass: 'slider__controls-element',
+        bulletActiveClass: 'slider__controls-element-active'
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    keyboard: {
+        enabled: true,
+    },
+    //
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+
+    /*breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        }
+    }*/
+});
+const swiper2 = new Swiper('.books-list', {
+    loop: true,
+
+    slidesPerView: 4,
+    spaceBetween: 20,
+    //centeredSlides: true,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        bulletClass: 'slider__controls-element',
+        bulletActiveClass: 'slider__controls-element-active'
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    keyboard: {
+        enabled: true,
+    },
+    //
+    // autoplay: {
+    //     delay: 2500,
+    //     disableOnInteraction: false,
+    // },
+
+    /*breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        }
+    }*/
+});
+
+Fancybox.bind("[data-fancybox]", {});
 
 // Общие функции
 /**

@@ -6,11 +6,22 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Шевчук Виталий Геннадьевич | Разработчик web приложений</title>
 
+    <!-- Сброс стилей по умолчанию -->
     <link rel="stylesheet" href="css/reset.css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Swiper js slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Fancybox open image full -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
-
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
     <input class="checkbox" type="checkbox" name="hamburger" id="hamburger" />
@@ -164,45 +175,86 @@
     <section class="achievements section-grey block-center observer-section" id="achievements">
         <h2 class="second-title">Достижения</h2>
 
-        <div class="achievements-list slider">
+        <div class="swiper slider achievements-list">
+            <div class="swiper-wrapper">
+                <a href="images/achievements/bitrix.webp" data-fancybox="achievements" data-caption="Bitrix" class="swiper-slide block-center">
+                    <img
+                            class="achievements-list__image slider__image"
+                            src="images/achievements/bitrix.webp"
+                            alt="Bitrix"
+                    />
+                </a>
+                <a href="images/achievements/eldorado2020.webp" data-fancybox="achievements" data-caption="Eldorado лучший сотрудник" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/eldorado2020.webp" alt="Eldorado лучший сотрудник">
+                </a>
+                <a href="images/achievements/html.webp" data-fancybox="achievements" data-caption="Html" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/html.webp" alt="html test">
+                </a>
+                <a href="images/achievements/php.webp" target="_blank" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/php.webp" alt="php test">
+                </a>
+                <a href="images/achievements/skillbox.webp" target="_blank" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/skillbox.webp" alt="skillbox php курс">
+                </a>
+                <a href="images/achievements/teamlead.webp" target="_blank" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/teamlead.webp" alt="teamlead курс">
+                </a>
+                <a href="images/achievements/css-3.png" target="_blank" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/css-3.png" alt="css картинка">
+                </a>
+                <a href="images/achievements/html-5.png" target="_blank" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/html-5.png" alt="html картинка">
+                </a>
+                <a href="images/achievements/js.png" target="_blank" class="swiper-slide block-center">
+                    <img class="achievements-list__image slider__image" src="images/achievements/js.png" alt="js картинка">
+                </a>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!--<div class="achievements-list slider">
             <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-1" checked />
             <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-2" />
             <input class="slider__input" type="radio" name="slider_achievements" id="slider-achievements-3" />
 
             <div class="achievements-list__view slider__wrapper">
-                <a href="images/achievements/bitrix.webp" target="_blank" class="achievements-list__element slider__link  block-center">
+                <a href="images/achievements/bitrix.webp" target="_blank" class="swiper-slide">
                     <img
                         class="achievements-list__image slider__image"
                         src="images/achievements/bitrix.webp"
                         alt="Bitrix"
                     />
                 </a>
-                <a href="images/achievements/eldorado2020.webp" target="_blank" class="achievements-list__element slider__link  block-center">
+                <a href="images/achievements/eldorado2020.webp" target="_blank" class="swiper-slide">
                     <img class="achievements-list__image slider__image" src="images/achievements/eldorado2020.webp" alt="Eldorado лучший сотрудник">
                 </a>
-                <a href="images/achievements/html.webp" target="_blank" class="achievements-list__element slider__link  block-center">
+                <a href="images/achievements/html.webp" target="_blank" class="swiper-slide">
                     <img class="achievements-list__image slider__image" src="images/achievements/html.webp" alt="html test">
                 </a>
             </div>
             <div class="achievements-list__view slider__wrapper">
-                <a href="images/achievements/php.webp" target="_blank" class="achievements-list__element slider__link  block-center">
+                <a href="images/achievements/php.webp" target="_blank" class="swiper-slide">
                     <img class="achievements-list__image slider__image" src="images/achievements/php.webp" alt="php test">
                 </a>
-                <a href="images/achievements/skillbox.webp" target="_blank" class="achievements-list__element slider__link  block-center">
+                <a href="images/achievements/skillbox.webp" target="_blank" class="swiper-slide">
                     <img class="achievements-list__image slider__image" src="images/achievements/skillbox.webp" alt="skillbox php курс">
                 </a>
-                <a href="images/achievements/teamlead.webp" target="_blank" class="achievements-list__element slider__link  block-center">
+                <a href="images/achievements/teamlead.webp" target="_blank" class="swiper-slide">
                     <img class="achievements-list__image slider__image" src="images/achievements/teamlead.webp" alt="teamlead курс">
                 </a>
             </div>
             <div class="achievements-list__view slider__wrapper">
-                <a href="images/achievements/css-3.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                <a href="images/achievements/css-3.png" target="_blank" class="swiper-slide">
                     <img class="achievements-list__image slider__image" src="images/achievements/css-3.png" alt="css картинка">
                 </a>
-                <a href="images/achievements/html-5.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                <a href="images/achievements/html-5.png" target="_blank" class="swiper-slide">
                     <img class="achievements-list__image slider__image" src="images/achievements/html-5.png" alt="html картинка">
                 </a>
-                <a href="images/achievements/js.png" target="_blank" class="achievements-list__element slider__link  block-center">
+                <a href="images/achievements/js.png" target="_blank" class="swiper-slide">
                     <img class="achievements-list__image slider__image" src="images/achievements/js.png" alt="js картинка">
                 </a>
             </div>
@@ -212,7 +264,7 @@
                 <label for="slider-achievements-2" class="slider__controls-element"></label>
                 <label for="slider-achievements-3" class="slider__controls-element"></label>
             </div>
-        </div>
+        </div>-->
     </section>
 
     <section class="skills observer-section" id="skills">
@@ -1430,7 +1482,36 @@
         <p class="section-description">Тут указаны не все прочитанные мной книги,
             а только те книги, которые произвели на меня наибольшее впечатление.</p>
 
-        <div class="books-list slider">
+        <div class="swiper books-list slider">
+            <div class="swiper-wrapper">
+                <a href="images/books/7skills.png" data-fancybox="books" data-caption="7 навыков" class="swiper-slide block-center">
+                    <img class="slider__image" src="images/books/7skills.png" alt="7 навыков">
+                </a>
+                <a href="images/books/clear-code.png" data-fancybox="books" data-caption="Clear code" class="swiper-slide block-center">
+                    <img class="slider__image" src="images/books/clear-code.png" alt="Чистый код">
+                </a>
+                <a href="images/books/patterns.png" target="_blank" class="swiper-slide block-center">
+                    <img class="slider__image" src="images/books/patterns.png" alt="Паттерны">
+                </a>
+                <a href="images/books/perfect-code.png" target="_blank" class="swiper-slide block-center">
+                    <img class="slider__image" src="images/books/perfect-code.png" alt="Прекрасный код">
+                </a>
+                <a href="images/books/program-fan.png" target="_blank" class="swiper-slide block-center">
+                    <img class="slider__image" src="images/books/program-fan.png" alt="Программист фанатик">
+                </a>
+                <a href="images/books/secret.png" target="_blank" class="swiper-slide block-center">
+                    <img class="slider__image" src="images/books/secret.png" alt="Секрет">
+                </a>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!--<div class="books-list slider">
             <input class="slider__input" type="radio" name="slider_books" id="slider-books-1" checked />
             <input class="slider__input" type="radio" name="slider_books" id="slider-books-2" />
 
@@ -1461,7 +1542,7 @@
                 <label for="slider-books-1" class="slider__controls-element"></label>
                 <label for="slider-books-2" class="slider__controls-element"></label>
             </div>
-        </div>
+        </div>-->
     </section>
 
     <section class="contact-me observer-section" id="contact-me">
