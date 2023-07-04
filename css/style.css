@@ -1025,17 +1025,11 @@ a.link:hover {
     overflow-x: hidden;
 }
 
-.slider__wrapper {
-    flex: 1 1 100%;
-    display: flex;
-    justify-content: space-between;
-    min-width: 100%;
-
-    transition: all .5s ease;
-}
-
 .slider__link {
-    flex: 1 1 33%;
+    transition: all .3s ease;
+}
+.slider__link--center {
+    width: 100%;
 }
 
 .slider__image {
@@ -1066,26 +1060,6 @@ a.link:hover {
     transition: all .25s ease;
 }
 .slider__controls-element:hover,
-.slider__input:first-of-type:checked ~ .slider__controls .slider__controls-element:first-of-type,
-.slider__input:nth-of-type(2):checked ~ .slider__controls .slider__controls-element:nth-of-type(2),
-.slider__input:nth-of-type(3):checked ~ .slider__controls .slider__controls-element:nth-of-type(3),
-.slider__input:nth-of-type(4):checked ~ .slider__controls .slider__controls-element:nth-of-type(4),
-.slider__input:nth-of-type(5):checked ~ .slider__controls .slider__controls-element:nth-of-type(5) {
+.slider__controls-element.active {
     background: var(--color-green);
-}
-
-.slider__input:first-of-type:checked ~ .slider__wrapper:first-of-type {
-    margin-left: 0;
-}
-.slider__input:nth-of-type(2):checked ~ .slider__wrapper:first-of-type {
-    margin-left: -100%;
-}
-.slider__input:nth-of-type(3):checked ~ .slider__wrapper:first-of-type {
-    margin-left: -200%;
-}
-.slider__input:nth-of-type(4):checked ~ .slider__wrapper:first-of-type {
-    margin-left: -300%;
-}
-.slider__input:nth-of-type(5):checked ~ .slider__wrapper:first-of-type {
-    margin-left: -400%;
 }
