@@ -227,16 +227,22 @@
 .about-me {
     display: flex;
     align-items: center;
-    padding-bottom: 60px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 60px 60px;
+}
+
+.about-me .row {
+    display: flex;
+    width: 100%;
+    gap: 60px;
 }
 
 .about-me .left {
     flex: 1 1 40%;
-    padding-right: 40px;
 }
 .about-me .right {
     flex: 1 1 60%;
-    padding-left: 20px;
 }
 
 .about-me__image {
@@ -278,6 +284,52 @@ ul.about-me__extra {
 }
 .about-me__extra-icon svg {
     color: var(--color-green);
+}
+
+.about-me__youtube {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.about-me__iframe {
+    border-radius: 10px;
+    filter: drop-shadow(10px 10px 10px var(--background-black-opacity));
+}
+
+.support-button {
+    position: relative;
+    display: inline-flex;
+    height: 45px;
+    padding: 0 15px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 45px;
+    background: var(--color-green);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 4px;
+    opacity: .9;
+    transition: .1s ease;
+}
+.support-button:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid var(--background-light-black-opacity);
+    border-radius: 4px;
+    transform: rotate(-5deg);
+    transition: all .25s ease;
+}
+
+.support-button:hover {
+    opacity: 1;
+}
+.support-button:hover::before {
+    transform: rotate(0);
 }
 
 /* Секция достижения */
