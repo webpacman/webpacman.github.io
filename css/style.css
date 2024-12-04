@@ -354,6 +354,34 @@ ul.about-me__extra {
     bottom: -140px;
 }
 
+.achievements-list__view:first-of-type {
+    animation: autoplay 8s infinite;
+}
+
+@keyframes autoplay {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -200%;
+    }
+    85% {
+        margin-left: -200%;
+    }
+    90% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
 /* Секция навыки */
 .skills {
     padding: 60px 0 40px;
